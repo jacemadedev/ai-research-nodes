@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .react-flow__node {
+    @apply select-none;
+  }
+
+  .react-flow__handle {
+    @apply !w-3 !h-3 !bg-gray-200 border border-gray-300;
+  }
+
+  .react-flow__handle-top {
+    @apply !top-0 -translate-y-1/2;
+  }
+
+  .react-flow__handle-bottom {
+    @apply !bottom-0 translate-y-1/2;
+  }
+
+  .react-flow__edge-path {
+    @apply !stroke-2 !stroke-gray-300;
+  }
+
+  .react-flow__controls {
+    @apply !bg-white !shadow-lg !rounded-lg !border !border-gray-200;
+  }
+
+  .react-flow__controls-button {
+    @apply !border-gray-200 !w-8 !h-8 hover:!bg-gray-50 !text-gray-700;
+  }
+
+  .react-flow__background {
+    @apply !bg-gray-50;
+  }
+
+  .node-base {
+    @apply bg-white text-gray-900 border border-gray-200 shadow-lg;
+  }
+
+  .node-header {
+    @apply flex items-center gap-2 mb-4 text-gray-700 font-medium;
+  }
+
+  .node-input {
+    @apply bg-white border-gray-200 text-gray-900 placeholder-gray-400 focus:ring-blue-500;
+  }
+
+  .node-button {
+    @apply bg-blue-600 hover:bg-blue-700 text-white disabled:bg-blue-400;
+  }
+
+  .node-content {
+    @apply bg-gray-50 border-gray-200 text-gray-700;
+  }
+}
